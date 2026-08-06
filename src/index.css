@@ -1,0 +1,54 @@
+:root {
+  --paper: #f7f2e8;
+  --ink: #26231f;
+  --muted: #736d63;
+  --line: #dcd5c8;
+  --vermilion: #e56b4b;
+  --vermilion-dark: #b84930;
+  --vermilion-soft: #f5c9bb;
+  --sage: #507d75;
+  --mustard: #d39a35;
+  --display: 'Yu Mincho', 'Hiragino Mincho ProN', 'Noto Serif CJK SC', Georgia, serif;
+  --sans: 'Yu Gothic UI', 'Hiragino Kaku Gothic ProN', 'Microsoft YaHei UI', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(229, 107, 75, 0.06), transparent 26%),
+    radial-gradient(circle at 90% 42%, rgba(80, 125, 117, 0.065), transparent 30%),
+    var(--paper);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--sage);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--vermilion-soft);
+}
